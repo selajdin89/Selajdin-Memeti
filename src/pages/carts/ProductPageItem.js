@@ -24,6 +24,7 @@ function ProductPageItem(props) {
     capacity,
     usbPorts,
     gallery,
+    attribute,
   } = props;
   const dispatch = useDispatch();
   const addItemToCart = () => {

@@ -3,8 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 
 const CATEGORIES_LIST = gql`
   query {
-    categories {
-      name
+    category(input: { title: "all" }) {
       products {
         id
         name
@@ -34,8 +33,11 @@ const CATEGORIES_LIST = gql`
     }
   }
 `;
+
 function useAll() {
-  const { error, loading, data } = useQuery(CATEGORIES_LIST);
+  const { error, loading, data } = useQuery(CATEGORIES_LIST, {
+    category: "all",
+  });
 
   return {
     error,

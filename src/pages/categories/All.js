@@ -21,7 +21,7 @@ function All() {
     <Fragment>
       <h2 className={classes.title}>All</h2>
       <Card>
-        {data.categories[0].products.map((product) => (
+        {data.category.products.map((product) => (
           <div
             key={product.id}
             className={`${classes["image-container"]} ${classes["text-link"]}`}

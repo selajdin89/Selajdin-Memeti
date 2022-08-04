@@ -23,7 +23,6 @@ function CartItem(props) {
   } = props.item;
   const dispatch = useDispatch();
 
-  console.log(id);
   const addItemHandler = () => {
     dispatch(
       cartActions.addItemToCart({
