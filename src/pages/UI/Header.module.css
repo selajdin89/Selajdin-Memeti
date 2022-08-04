@@ -1,0 +1,75 @@
+.header-container {
+  margin-left: -2rem;
+  height: 8rem;
+  width: 105%;
+  background-color: #fff;
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+}
+
+.header {
+  height: 100%;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-items {
+  margin-left: 2rem;
+  display: flex;
+  list-style: none;
+}
+
+.list-items a:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.list-items a {
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.actions {
+  position: absolute;
+  right: 5%;
+}
+
+.icons {
+  display: flex;
+}
+
+.cart-icon {
+  font-size: 2.2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  border-radius: 60px;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  right: -1rem;
+  top: -1rem;
+  line-height: 0.8;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+}

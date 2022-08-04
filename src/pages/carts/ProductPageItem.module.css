@@ -1,0 +1,133 @@
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-image {
+  margin-top: 2rem;
+  list-style: none;
+  width: 8rem;
+  height: 8rem;
+}
+
+.small-image img {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.image-container {
+  margin-left: 2.5rem;
+  width: 61rem;
+  height: 51rem;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.description {
+  margin-left: 10rem;
+  color: #1d1f22;
+  width: 29rem;
+}
+
+.description h2 {
+  line-height: 27px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.type {
+  line-height: 27px;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.attributes {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.squares {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.li-sizes {
+  display: flex;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 1px solid #1d1f22;
+}
+
+.li-colors {
+  display: flex;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.squareButton {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 1.5rem 2.4rem;
+  border: none;
+}
+
+.colorButtons {
+  cursor: pointer;
+  padding: 1.6rem;
+  border: none;
+}
+
+.bgColor {
+  background-color: #000;
+  color: #fff;
+}
+
+.borderStyle {
+  border: 1.5px solid #5ece7b;
+  color: red;
+}
+
+.description span {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: block;
+}
+
+.addButton {
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  padding: 1.6rem 3.2rem;
+  background-color: #5ece7b;
+  color: #fff;
+  border: none;
+}
+
+.disabledButton {
+  background-color: #d9d9d9;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  border: none;
+  pointer-events: none;
+}
+
+.text {
+  font-size: 1.4rem;
+}

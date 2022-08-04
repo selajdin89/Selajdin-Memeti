@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cart from "./pages/carts/Cart";
+import All from "./pages/categories/All";
+import { useSelector } from "react-redux";
+import Clothes from "./pages/categories/Clothes";
+import Tech from "./pages/categories/Tech";
+import { Routes, Route } from "react-router-dom";
+import Header from "./pages/UI/Header";
+import ProductPage from "./pages/carts/ProductPage";
+import ViewBag from "./pages/carts/ViewBag";
 
 function App() {
+  const cartIsShown = useSelector((state) => state.ui.cartIsVisible);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<All />}></Route>
+        <Route path="tech" element={<Tech />}></Route>
+        <Route path="clothes" element={<Clothes />}></Route>
+        <Route path="/product/:id" element={<ProductPage />}></Route>
+        <Route path="/bag/" element={<ViewBag />}></Route>
+      </Routes>
+
+      {cartIsShown && <Cart />}
     </div>
   );
 }

@@ -1,0 +1,24 @@
+.ul {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.title {
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.total {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.total p {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.values p {
+  font-weight: 700;
+}

@@ -1,0 +1,24 @@
+.dropdown-container {
+  width: 12rem;
+  position: absolute;
+  top: 3rem;
+  left: -2rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.dropdownList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+}
+
+.dropdownList li {
+  padding: 2rem 4rem 2rem 2rem;
+}
+
+.dropdownList li:hover {
+  background-color: #d9d9d9;
+}

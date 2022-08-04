@@ -1,0 +1,53 @@
+.ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart button {
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #000;
+}
+
+.total p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.total span {
+  padding: 0 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-footer button {
+  cursor: pointer;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+.view-button {
+  border: 1px solid #1d1f22;
+}
+
+.checkout-button {
+  background-color: #5ece7b;
+  color: #fff;
+  border: none;
+}
+
+.empty {
+  font-size: 1.6rem;
+}
