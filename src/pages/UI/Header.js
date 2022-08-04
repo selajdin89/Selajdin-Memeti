@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { uiActions } from "../store/ui-slice";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
+import icon from "./Brand icon.png";
 
 function Header() {
   const cartQuantity = useSelector((state) => state.cart.totalQuantity);
@@ -38,6 +39,9 @@ function Header() {
   return (
     <div className={classes["header-container"]}>
       <div className={classes.header}>
+        <div className={classes.brandIcon}>
+          <img src={icon} />
+        </div>
         <nav
           className={
             !cartIsShown
