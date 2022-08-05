@@ -16,3 +16,17 @@
 .text-link {
   text-decoration: none;
 }
+
+.error {
+  text-align: center;
+  margin-top: 12rem;
+  font-size: 2rem;
+  color: orangered;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 12rem;
+  font-size: 2rem;
+  color: rgb(32, 23, 41);
+}

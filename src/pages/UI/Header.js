@@ -33,6 +33,7 @@ function Header() {
   const navLinkStyles = ({ isActive }) => {
     return {
       borderBottom: isActive ? "2px solid #5ece7b" : "none",
+      color: isActive ? "#5ece7b" : "#000",
     };
   };
 
@@ -40,7 +41,7 @@ function Header() {
     <div className={classes["header-container"]}>
       <div className={classes.header}>
         <div className={classes.brandIcon}>
-          <img src={icon} />
+          <img src={icon} alt="brand-icon" />
         </div>
         <nav
           className={

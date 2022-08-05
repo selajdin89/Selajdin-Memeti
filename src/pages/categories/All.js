@@ -10,11 +10,11 @@ function All() {
   const currency = useSelector((state) => state.cart.currency);
 
   if (loading) {
-    return <div>Loading....⏳</div>;
+    return <div className={classes.loading}>Loading....⏳</div>;
   }
 
   if (error) {
-    return <div>Error</div>;
+    return <div className={classes.error}>Something went wrong!!</div>;
   }
 
   return (
