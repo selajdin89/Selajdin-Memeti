@@ -12,8 +12,6 @@ import ViewBag from "./pages/carts/ViewBag";
 function App() {
   const cartIsShown = useSelector((state) => state.ui.cartIsVisible);
 
-  // console.log(cartIsShown);
-
   return (
     <div className="App">
       <Header />
